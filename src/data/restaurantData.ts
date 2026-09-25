@@ -73,7 +73,7 @@ export const SPACES_DATA: AmbianceSpace[] = [
     title: "The Ambient Evening Lounge",
     eyebrow: "Intimate Dinner Service",
     description:
-      "Deep espresso-stained walnut, curved plaster alcoves, and moody 2200K ambient illumination. Tailored for celebratory dinners, botanical coolers, and unhurried midnight conversations.",
+      "Deep espresso-stained walnut, curved plaster alcoves, and bespoke private dining suites including 'Ash & Oak'. Tailored for celebratory dinners, botanical coolers, and unhurried midnight conversations.",
     atmosphere: "Refined, moody, unhurried",
     image:
       "https://images.unsplash.com/photo-1544025162-d76694265947?q=85&w=1200&auto=format&fit=crop",

@@ -57,7 +57,7 @@ export default function LocationContact() {
             {/* Links */}
             <div className="border-t border-sand-300/60 pt-5 flex flex-col space-y-3">
               <a
-                href={RESTAURANT_INFO.googleMapsUrl}
+                href={RESTAURANT_INFO.googleMapsDirectionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1.5 text-xs uppercase tracking-[0.16em] font-medium text-espresso-950 hover:text-champagne-600 transition-colors"

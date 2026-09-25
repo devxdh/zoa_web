@@ -36,7 +36,7 @@ export default function MobileStickyBar() {
           </a>
 
           <a
-            href={RESTAURANT_INFO.googleMapsUrl}
+            href={RESTAURANT_INFO.googleMapsDirectionsUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="py-3 px-5 rounded-full border border-sand-400 text-espresso-950 text-xs tracking-[0.16em] uppercase font-medium inline-flex items-center space-x-1"

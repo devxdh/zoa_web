@@ -184,7 +184,7 @@ export default function Navbar() {
               Reserve via WhatsApp
             </a>
             <a
-              href={RESTAURANT_INFO.googleMapsUrl}
+              href={RESTAURANT_INFO.googleMapsDirectionsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center py-3 rounded-full border border-sand-300 text-espresso-900 text-xs tracking-[0.18em] uppercase font-medium"

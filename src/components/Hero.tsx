@@ -65,7 +65,7 @@ export default function Hero() {
           <span>Open Daily 12:00 PM – 12:00 AM</span>
           <span className="text-sand-600">•</span>
           <a
-            href={RESTAURANT_INFO.googleMapsUrl}
+            href={RESTAURANT_INFO.googleMapsDirectionsUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-sand-200 underline underline-offset-4 decoration-sand-500/40 transition-colors"

@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { RESTAURANT_INFO } from "@/data/restaurantData";
 import { ArrowDown } from "lucide-react";
@@ -10,10 +9,13 @@ export default function Hero() {
     <section className="relative min-h-[94vh] sm:min-h-screen flex items-center justify-center overflow-hidden bg-espresso-950 pt-24 pb-16">
       {/* Background Image with Cinematic Dark Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=85&w=2000&auto=format&fit=crop"
           alt="ZOA Jodhpur architectural dining ambiance"
-          className="w-full h-full object-cover object-center scale-100 filter brightness-[0.78] contrast-[1.05]"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center brightness-[0.78] contrast-[1.05]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-espresso-950 via-espresso-950/40 to-espresso-950/75" />
       </div>

@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import Image from "next/image";
 import { SPACES_DATA } from "@/data/restaurantData";
 
 export default function Ambiance() {
@@ -37,15 +36,16 @@ export default function Ambiance() {
               >
                 {/* Image */}
                 <div
-                  className={`lg:col-span-7 overflow-hidden rounded-2xl bg-sand-200 aspect-[16/10] sm:aspect-[16/9.5] shadow-[0_4px_20px_rgba(0,0,0,0.04)] ${
+                  className={`lg:col-span-7 relative overflow-hidden rounded-2xl bg-sand-200 aspect-[16/10] sm:aspect-[16/9.5] shadow-[0_4px_20px_rgba(0,0,0,0.04)] ${
                     isReversed ? "lg:col-start-6" : ""
                   }`}
                 >
-                  <img
+                  <Image
                     src={space.image}
                     alt={space.title}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 58vw"
+                    className="object-cover transition-transform duration-700 hover:scale-105"
                   />
                 </div>
 

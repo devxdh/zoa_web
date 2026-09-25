@@ -28,9 +28,9 @@ export const RESTAURANT_INFO = {
   instagramUrl: "https://www.instagram.com/zoaindia",
   instagramHandle: "@zoaindia",
   googleMapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=ZOA+Jodhpur%2C+01+Pal+Bypass%2C+Near+Veetrag+City%2C+Jodhpur%2C+Rajasthan+342014",
+    "https://www.google.com/maps/search/?api=1&query=ZOA+Jodhpur",
   googleMapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7156.914283891461!2d72.964201!3d26.234812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c4e402bfd97%3A0x67dbad97a8e2cb5a!2sPal%20Bypass%2C%20near%20Veetrag%20City%2C%20Jodhpur%2C%20Rajasthan%20342014!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7156.914283891461!2d72.964201!3d26.234812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c4e402bfd97%3A0x67dbad97a8e2cb5a!2sZOA%20Jodhpur!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin",
   address: {
     line1: "01, Pal Bypass, Bhadu Market",
     landmark: "Near Veetrag City, Jaisalmer Bypass Road / Ring Road",

@@ -71,7 +71,11 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/zoa-logo.jpg" },
+    ],
+    apple: [{ url: "/apple-icon.png" }],
   },
 };
 

@@ -26,9 +26,9 @@ export default function MenuHighlights() {
           </p>
         </div>
 
-        {/* Intuitive Tactile Category Pill Switcher */}
+        {/* Intuitive Tactile Category Pill Switcher (Full 4-column dock on mobile, no scroll cut-off) */}
         <div className="flex justify-center mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 p-1.5 rounded-full bg-sand-200/90 border border-sand-300/80 max-w-full overflow-x-auto no-scrollbar shadow-inner">
+          <div className="w-full max-w-xl mx-auto grid grid-cols-4 p-1 sm:p-1.5 rounded-full bg-sand-200/90 border border-sand-300/80 shadow-inner">
             {MENU_CATEGORIES.map((cat) => {
               const isActive = activeTab === cat.id;
               return (
@@ -36,7 +36,7 @@ export default function MenuHighlights() {
                   key={cat.id}
                   type="button"
                   onClick={() => setActiveTab(cat.id)}
-                  className={`px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs tracking-[0.14em] uppercase font-medium transition-all duration-200 whitespace-nowrap shrink-0 active:scale-95 ${
+                  className={`py-2 sm:py-2.5 px-1 sm:px-4 rounded-full text-[11px] sm:text-xs tracking-wider uppercase font-medium transition-all duration-200 text-center flex items-center justify-center active:scale-95 ${
                     isActive
                       ? "bg-espresso-950 text-sand-50 shadow-md font-semibold"
                       : "text-espresso-800 hover:text-espresso-950 hover:bg-sand-300/60"
@@ -71,21 +71,21 @@ export default function MenuHighlights() {
                     className="flex flex-col justify-between pb-5 border-b border-sand-300/50 group"
                   >
                     <div>
-                      <div className="flex items-center justify-between mb-1.5">
-                        <div className="flex items-center space-x-2">
-                          <h3 className="font-serif text-lg sm:text-xl font-normal text-espresso-950 group-hover:text-champagne-600 transition-colors">
+                      <div className="flex items-start justify-between gap-3 mb-1.5">
+                        <div className="flex-1 min-w-0 pr-1">
+                          <h3 className="font-serif text-base sm:text-lg md:text-xl font-normal text-espresso-950 group-hover:text-champagne-600 transition-colors leading-snug">
                             {item.name}
+                            {item.isVeg && (
+                              <span
+                                className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-600 ml-2 align-middle -translate-y-[1px]"
+                                title="100% Vegetarian"
+                              />
+                            )}
                           </h3>
-                          {item.isVeg && (
-                            <span
-                              className="w-1.5 h-1.5 rounded-full bg-emerald-600 inline-block shrink-0"
-                              title="Vegetarian"
-                            />
-                          )}
                         </div>
 
-                        {/* Provenance Tag instead of Price */}
-                        <span className="text-[10px] uppercase tracking-widest text-sand-600 font-sans font-medium">
+                        {/* Provenance Tag */}
+                        <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-sand-600 font-sans font-medium shrink-0 whitespace-nowrap pt-1 text-right">
                           {item.provenance}
                         </span>
                       </div>

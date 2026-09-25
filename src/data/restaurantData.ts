@@ -84,9 +84,9 @@ export const SPACES_DATA: AmbianceSpace[] = [
 ];
 
 export const MENU_CATEGORIES = [
-  { id: "coffee", label: "Coffee & Coolers", fullLabel: "Artisanal Coffee & Coolers" },
-  { id: "small-plates", label: "Small Plates", fullLabel: "Small Plates & Tapas" },
-  { id: "mains", label: "Mains & Bakes", fullLabel: "Mains & Oven Bakes" },
+  { id: "coffee", label: "Coffee", fullLabel: "Artisanal Coffee & Coolers" },
+  { id: "small-plates", label: "Plates", fullLabel: "Small Plates & Tapas" },
+  { id: "mains", label: "Mains", fullLabel: "Mains & Oven Bakes" },
   { id: "desserts", label: "Desserts", fullLabel: "Patisserie & Desserts" },
 ] as const;
 

@@ -12,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-espresso-950 text-sand-300 border-t border-sand-500/15 pt-16 pb-28 md:pb-16">
+    <footer className="bg-espresso-950 text-sand-300 border-t border-sand-500/15 pt-12 pb-24 md:pt-16 md:pb-16">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 sm:gap-12 pb-14 border-b border-sand-500/15">
           {/* Brand Info */}

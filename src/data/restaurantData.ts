@@ -21,7 +21,7 @@ export const RESTAURANT_INFO = {
   subTitle: "JODHPUR",
   tagline: "Where Culinary Craft Meets Architectural Calm",
   shortDesc:
-    "An unhurried sanctuary in Jodhpur celebrating artisanal coffee, slow-crafted cuisine, and the tranquil warmth of desert architecture.",
+    "A modern vegetarian dining destination in Jodhpur, blending global flavours with Scandinavian-inspired design, lush landscapes, and curated experiences from relaxed afternoons to vibrant evenings.",
   phone: "+919414100919",
   formattedPhone: "+91 94141 00919",
   whatsappNumber: "919414100919",
@@ -84,10 +84,10 @@ export const SPACES_DATA: AmbianceSpace[] = [
 ];
 
 export const MENU_CATEGORIES = [
-  { id: "coffee", label: "Artisanal Coffee & Coolers" },
-  { id: "small-plates", label: "Small Plates & Tapas" },
-  { id: "mains", label: "Mains & Oven Bakes" },
-  { id: "desserts", label: "Patisserie & Desserts" },
+  { id: "coffee", label: "Coffee & Coolers", fullLabel: "Artisanal Coffee & Coolers" },
+  { id: "small-plates", label: "Small Plates", fullLabel: "Small Plates & Tapas" },
+  { id: "mains", label: "Mains & Bakes", fullLabel: "Mains & Oven Bakes" },
+  { id: "desserts", label: "Desserts", fullLabel: "Patisserie & Desserts" },
 ] as const;
 
 export const MENU_ITEMS: MenuItem[] = [

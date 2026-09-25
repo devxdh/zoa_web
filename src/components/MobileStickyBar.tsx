@@ -24,13 +24,14 @@ export default function MobileStickyBar() {
         isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <div className="bg-[#FAF8F5]/92 backdrop-blur-xl border-t border-sand-300/80 px-5 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
-        <div className="flex items-center gap-3 max-w-sm mx-auto">
+      {/* Fully opaque solid background so nothing behind ever bleeds through */}
+      <div className="bg-[#FAF8F5] border-t border-sand-300 px-4 pt-3 pb-4 shadow-[0_-6px_25px_rgba(0,0,0,0.12)]">
+        <div className="flex items-center gap-2.5 max-w-sm mx-auto">
           <a
             href={RESTAURANT_INFO.reservationWhatsAppLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 py-3 px-4 rounded-full bg-espresso-950 text-sand-50 text-xs tracking-[0.16em] uppercase font-medium text-center shadow-sm"
+            className="flex-1 py-3 px-4 rounded-full bg-espresso-950 text-sand-50 active:bg-espresso-900 active:scale-[0.98] text-xs tracking-[0.16em] uppercase font-medium text-center shadow-sm transition-all"
           >
             Reserve Table
           </a>
@@ -39,10 +40,10 @@ export default function MobileStickyBar() {
             href={RESTAURANT_INFO.googleMapsDirectionsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="py-3 px-5 rounded-full border border-sand-400 text-espresso-950 text-xs tracking-[0.16em] uppercase font-medium inline-flex items-center space-x-1"
+            className="py-3 px-4 sm:px-5 rounded-full bg-sand-200 hover:bg-sand-300 active:bg-sand-400 active:scale-[0.98] border border-sand-400 text-espresso-950 text-xs tracking-[0.16em] uppercase font-semibold inline-flex items-center space-x-1.5 shadow-sm transition-all shrink-0"
           >
             <span>Map</span>
-            <ArrowUpRight className="w-3 h-3 text-sand-600" />
+            <ArrowUpRight className="w-3.5 h-3.5 text-espresso-950 shrink-0" />
           </a>
         </div>
       </div>

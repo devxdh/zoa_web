@@ -8,10 +8,10 @@ export default function MenuHighlights() {
   const [activeTab, setActiveTab] = useState<string>("coffee");
 
   return (
-    <section id="menu" className="py-16 sm:py-20 bg-[#F6F2EA]/60 text-espresso-900 scroll-mt-12">
+    <section id="menu" className="py-12 sm:py-20 bg-[#F6F2EA]/60 text-espresso-900 scroll-mt-12">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-14">
+        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12">
           <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-600 block mb-2.5">
             Culinary Craft
           </span>
@@ -26,9 +26,9 @@ export default function MenuHighlights() {
           </p>
         </div>
 
-        {/* Instant Category Tab Switcher */}
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex border-b border-sand-300/80 overflow-x-auto max-w-full pb-px space-x-6 sm:space-x-10 no-scrollbar">
+        {/* Intuitive Tactile Category Pill Switcher */}
+        <div className="flex justify-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-1.5 p-1.5 rounded-full bg-sand-200/90 border border-sand-300/80 max-w-full overflow-x-auto no-scrollbar shadow-inner">
             {MENU_CATEGORIES.map((cat) => {
               const isActive = activeTab === cat.id;
               return (
@@ -36,16 +36,14 @@ export default function MenuHighlights() {
                   key={cat.id}
                   type="button"
                   onClick={() => setActiveTab(cat.id)}
-                  className={`pb-3 text-xs sm:text-sm tracking-[0.16em] uppercase font-medium transition-colors whitespace-nowrap relative focus:outline-none ${
+                  className={`px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs tracking-[0.14em] uppercase font-medium transition-all duration-200 whitespace-nowrap shrink-0 active:scale-95 ${
                     isActive
-                      ? "text-espresso-950 font-semibold"
-                      : "text-espresso-600 hover:text-espresso-900"
+                      ? "bg-espresso-950 text-sand-50 shadow-md font-semibold"
+                      : "text-espresso-800 hover:text-espresso-950 hover:bg-sand-300/60"
                   }`}
                 >
-                  <span>{cat.label}</span>
-                  {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-espresso-950" />
-                  )}
+                  <span className="sm:hidden">{cat.label}</span>
+                  <span className="hidden sm:inline">{cat.fullLabel}</span>
                 </button>
               );
             })}
@@ -53,7 +51,7 @@ export default function MenuHighlights() {
         </div>
 
         {/* Stable Menu Container with Zero Lag / Zero Layout Shift */}
-        <div className="min-h-[380px]">
+        <div className="min-h-[300px] sm:min-h-[360px]">
           {MENU_CATEGORIES.map((category) => {
             const isCategoryActive = activeTab === category.id;
             const items = MENU_ITEMS.filter((item) => item.category === category.id);

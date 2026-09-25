@@ -7,7 +7,7 @@ import { ArrowUpRight, Phone } from "lucide-react";
 
 export default function LocationContact() {
   return (
-    <section id="location" className="py-16 sm:py-20 bg-[#FAF8F5] text-espresso-900 scroll-mt-12">
+    <section id="location" className="py-12 sm:py-20 bg-[#FAF8F5] text-espresso-900 scroll-mt-12">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 items-start">
           {/* Details Column */}
@@ -87,8 +87,28 @@ export default function LocationContact() {
             </div>
           </div>
 
-          {/* Clean Map Column (No overlapping floating cards) */}
-          <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-sand-200 border border-sand-300/70 shadow-sm h-[360px] sm:h-[420px]">
+          {/* Clean Map Column with Interactive Embed & Native Directions */}
+          <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-sand-200/60 border border-sand-300/80 shadow-sm min-h-[340px] h-[360px] sm:h-[420px] lg:h-full lg:min-h-[460px] relative">
+            {/* Elegant Map Underlay / Fallback (Visible while loading or if offline) */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-sand-100 to-sand-200 z-0">
+              <div className="w-10 h-10 rounded-full bg-sand-300/80 flex items-center justify-center mb-3">
+                <ArrowUpRight className="w-5 h-5 text-espresso-900" />
+              </div>
+              <p className="font-serif text-lg font-medium text-espresso-950">ZOA Jodhpur</p>
+              <p className="text-xs text-espresso-700 font-light mt-1 max-w-xs">
+                Pal Bypass, Bhadu Market, near Veetrag City, Jodhpur
+              </p>
+              <a
+                href={RESTAURANT_INFO.googleMapsDirectionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 px-4 py-2 rounded-full bg-espresso-950 text-sand-50 text-[11px] tracking-widest uppercase font-medium shadow-sm hover:bg-espresso-900 transition-colors"
+              >
+                Open in Maps App
+              </a>
+            </div>
+
+            {/* Google Maps Embed iframe (No CSS filters to prevent mobile compositing bugs) */}
             <iframe
               src={RESTAURANT_INFO.googleMapsEmbedUrl}
               width="100%"
@@ -96,9 +116,9 @@ export default function LocationContact() {
               style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
               title="ZOA Jodhpur Location"
-              className="w-full h-full filter saturate-[0.85] contrast-[1.02]"
+              className="w-full h-full relative z-10 block"
             />
           </div>
         </div>

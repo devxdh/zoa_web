@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="#141210" stroke="#C5A880" stroke-width="2" stroke-opacity="0.6"/>
-  <!-- Top macron over A -->
-  <line x1="42.5" y1="20" x2="49.5" y2="20" stroke="#FAF8F5" stroke-width="1.8" stroke-linecap="round"/>
-  <!-- Z O A Text -->
-  <text x="31" y="42" font-family="Georgia, 'Cormorant Garamond', 'Playfair Display', serif" font-size="22" font-weight="700" fill="#FAF8F5" text-anchor="middle" letter-spacing="1.5">ZOA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#0D0B0A"/>
+  <!-- Z -->
+  <path d="M 40 195 L 160 195 L 40 355 L 160 355" fill="none" stroke="#FAF8F5" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <!-- O (Geometric Circle) -->
+  <circle cx="236" cy="275" r="80" fill="none" stroke="#FAF8F5" stroke-width="26"/>
+  <!-- A (Clean Chevron / Caret) -->
+  <path d="M 312 355 L 395 195 L 478 355" fill="none" stroke="#FAF8F5" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <!-- Macron above A -->
+  <line x1="362" y1="150" x2="428" y2="150" stroke="#FAF8F5" stroke-width="22" stroke-linecap="butt"/>
 </svg>

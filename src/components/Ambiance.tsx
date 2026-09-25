@@ -4,22 +4,22 @@ import { SPACES_DATA } from "@/data/restaurantData";
 
 export default function Ambiance() {
   return (
-    <section id="space" className="pt-10 pb-16 sm:pt-12 sm:pb-20 bg-[#FAF8F5] text-espresso-900 scroll-mt-16">
+    <section id="space" className="pt-6 pb-12 sm:pt-10 sm:pb-20 bg-[#FAF8F5] text-espresso-900 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         {/* Editorial Introduction */}
-        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-600 block mb-2.5">
             The Philosophy of Space
           </span>
 
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-espresso-950 tracking-tight leading-[1.2] text-balance">
-            An Unhurried Sanctuary Sculpted in Sandstone
+            Scandinavian Calm Meets Desert Warmth
           </h2>
 
           <p className="mt-4 text-espresso-700/85 text-sm sm:text-base leading-relaxed font-light">
-            Conceived as an architectural retreat from urban rush, ZOA balances raw local stone,
-            flowing organic lines, and natural desert light. Whether meeting over an afternoon
-            pour-over or lingering under starry midnight skies, the space invites you to slow down.
+            Conceived as an architectural dining sanctuary, ZOA blends Scandinavian-inspired minimalism,
+            warm native sandstone, and lush open-air landscapes. From quiet daytime coffee rituals to
+            intimate evenings inside bespoke private dining suites, each setting invites you to linger.
           </p>
         </div>
 

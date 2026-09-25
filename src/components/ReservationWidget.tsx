@@ -6,7 +6,7 @@ import { MessageCircle, Phone } from "lucide-react";
 
 export default function ReservationWidget() {
   return (
-    <section id="reserve" className="py-16 sm:py-20 bg-espresso-950 text-sand-50 relative overflow-hidden scroll-mt-12">
+    <section id="reserve" className="py-12 sm:py-20 bg-espresso-950 text-sand-50 relative overflow-hidden scroll-mt-12">
       {/* Subtle Ambient Radial Lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-champagne-500/5 rounded-full blur-[140px] pointer-events-none" />
 

@@ -22,10 +22,10 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
-        {/* Subtle Eyebrow */}
-        <div className="inline-flex items-center space-x-3 mb-6 text-sand-300 text-xs sm:text-[13px] tracking-[0.32em] uppercase font-sans font-medium">
+        {/* Subtle Eyebrow: Exact Brand Identity */}
+        <div className="inline-flex items-center space-x-3 mb-6 text-sand-300 text-xs sm:text-[13px] tracking-[0.3em] uppercase font-sans font-medium">
           <span className="w-6 h-[1px] bg-sand-400/40" />
-          <span>Jodhpur • Pal Bypass</span>
+          <span>Global Flavours • Scandinavian Calm</span>
           <span className="w-6 h-[1px] bg-sand-400/40" />
         </div>
 
@@ -35,10 +35,10 @@ export default function Hero() {
           <span className="italic font-light text-champagne-300">Architectural Calm</span>.
         </h1>
 
-        {/* Narrative Subtext */}
-        <p className="mt-6 text-sand-200/90 text-sm sm:text-base md:text-lg max-w-2xl font-light leading-relaxed">
-          An unhurried dining sanctuary in Jodhpur. Featuring single-origin artisanal brews,
-          hand-stretched Neapolitan crusts, and contemporary dining embraced by warm desert sandstone.
+        {/* Narrative Subtext with clean text shadow and solid ivory */}
+        <p className="mt-6 text-sand-50 text-sm sm:text-base md:text-lg max-w-2xl font-normal leading-relaxed [text-shadow:_0_1px_10px_rgba(0,0,0,0.85)]">
+          A modern vegetarian dining destination in Jodhpur — blending global flavours with
+          Scandinavian-inspired design and curated experiences, from relaxed coffee afternoons to vibrant evening dining.
         </p>
 
         {/* Primary CTAs */}
@@ -60,9 +60,11 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Subtle Timings & Directions Note */}
-        <div className="mt-12 text-sand-400 text-xs tracking-wider flex items-center space-x-3">
-          <span>Open Daily 12:00 PM – 12:00 AM</span>
+        {/* Operational Context: Location, Timings & Directions */}
+        <div className="mt-12 text-sand-400 text-xs tracking-wider flex flex-wrap items-center justify-center gap-y-2 gap-x-3">
+          <span>Pal Bypass, Jodhpur</span>
+          <span className="text-sand-600">•</span>
+          <span>12:00 PM – 12:00 AM</span>
           <span className="text-sand-600">•</span>
           <a
             href={RESTAURANT_INFO.googleMapsDirectionsUrl}

@@ -87,31 +87,8 @@ export default function LocationContact() {
             </div>
           </div>
 
-          {/* Map Column */}
-          <div className="lg:col-span-7 relative rounded-2xl overflow-hidden bg-sand-200 border border-sand-300/70 shadow-sm h-[360px] sm:h-[420px]">
-            {/* Permanent Venue Marker Card Overlay */}
-            <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-md border border-sand-300 max-w-[280px]">
-              <div className="flex items-center space-x-2">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-rose-600" />
-                </span>
-                <span className="font-serif font-medium text-espresso-950 text-sm">ZOA Jodhpur</span>
-              </div>
-              <p className="text-[11px] text-espresso-600 font-light mt-1">
-                01, Pal Bypass, Near Veetrag City
-              </p>
-              <a
-                href={RESTAURANT_INFO.googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center space-x-1 text-[11px] uppercase tracking-wider font-semibold text-rose-700 hover:text-rose-900 transition-colors"
-              >
-                <span>Direct Pin in Google Maps</span>
-                <ArrowUpRight className="w-3 h-3" />
-              </a>
-            </div>
-
+          {/* Clean Map Column (No overlapping floating cards) */}
+          <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-sand-200 border border-sand-300/70 shadow-sm h-[360px] sm:h-[420px]">
             <iframe
               src={RESTAURANT_INFO.googleMapsEmbedUrl}
               width="100%"

@@ -6,29 +6,29 @@ import { MessageCircle, Phone } from "lucide-react";
 
 export default function ReservationWidget() {
   return (
-    <section id="reserve" className="py-24 sm:py-32 bg-espresso-950 text-sand-50 relative overflow-hidden scroll-mt-12">
+    <section id="reserve" className="py-16 sm:py-20 bg-espresso-950 text-sand-50 relative overflow-hidden scroll-mt-12">
       {/* Subtle Ambient Radial Lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-champagne-500/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 sm:px-8 text-center relative z-10">
         {/* Eyebrow */}
-        <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-400 block mb-4">
+        <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-400 block mb-3">
           Hospitality & Reservations
         </span>
 
         {/* Headline */}
-        <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light text-sand-50 tracking-tight leading-[1.15] text-balance">
+        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-sand-50 tracking-tight leading-[1.15] text-balance">
           Reserve Your Table at ZOA
         </h2>
 
         {/* Narrative */}
-        <p className="mt-6 text-sand-300/85 text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-light">
-          We encourage reservations for sunset hours and evening dining. Connect directly with our
+        <p className="mt-4 text-sand-300/85 text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-light">
+          We encourage reservations for afternoon coffee hours and evening dining. Connect directly with our
           host team on WhatsApp for prompt table arrangements. Walk-ins are always warmly welcomed.
         </p>
 
         {/* Primary Action Buttons */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={RESTAURANT_INFO.reservationWhatsAppLink}
             target="_blank"
@@ -49,10 +49,10 @@ export default function ReservationWidget() {
         </div>
 
         {/* Practical Hospitality Details */}
-        <div className="mt-14 pt-8 border-t border-sand-500/20 grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-sand-400 font-light">
+        <div className="mt-12 pt-6 border-t border-sand-500/20 grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-sand-400 font-light">
           <div>
             <span className="block font-medium text-sand-200 mb-1">Service Hours</span>
-            <span>12:00 PM – 11:30 PM Daily</span>
+            <span>12:00 PM – 12:00 AM Daily</span>
           </div>
 
           <div>

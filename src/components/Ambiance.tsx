@@ -5,39 +5,39 @@ import { SPACES_DATA } from "@/data/restaurantData";
 
 export default function Ambiance() {
   return (
-    <section id="space" className="py-24 sm:py-32 bg-[#FAF8F5] text-espresso-900 scroll-mt-12">
+    <section id="space" className="pt-10 pb-16 sm:pt-12 sm:pb-20 bg-[#FAF8F5] text-espresso-900 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         {/* Editorial Introduction */}
-        <div className="max-w-3xl mx-auto text-center mb-20 sm:mb-28">
-          <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-600 block mb-3">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+          <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-600 block mb-2.5">
             The Philosophy of Space
           </span>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-light text-espresso-950 tracking-tight leading-[1.2] text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-espresso-950 tracking-tight leading-[1.2] text-balance">
             An Unhurried Sanctuary Sculpted in Sandstone
           </h2>
 
-          <p className="mt-6 text-espresso-700/85 text-sm sm:text-base leading-relaxed font-light">
+          <p className="mt-4 text-espresso-700/85 text-sm sm:text-base leading-relaxed font-light">
             Conceived as an architectural retreat from urban rush, ZOA balances raw local stone,
-            flowing organic lines, and natural desert light. Whether meeting over a morning
-            pour-over or lingering under starry night skies, the space invites you to slow down.
+            flowing organic lines, and natural desert light. Whether meeting over an afternoon
+            pour-over or lingering under starry midnight skies, the space invites you to slow down.
           </p>
         </div>
 
         {/* 3 Spaces Showcase - Magazine Editorial Layout */}
-        <div className="space-y-20 sm:space-y-28">
+        <div className="space-y-12 sm:space-y-16">
           {SPACES_DATA.map((space, idx) => {
             const isReversed = idx % 2 === 1;
             return (
               <div
                 key={space.id}
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-14 items-center ${
+                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center ${
                   isReversed ? "lg:grid-flow-dense" : ""
                 }`}
               >
                 {/* Image */}
                 <div
-                  className={`lg:col-span-7 overflow-hidden rounded-2xl bg-sand-200 aspect-[16/11] sm:aspect-[16/10] shadow-[0_8px_30px_rgba(0,0,0,0.06)] ${
+                  className={`lg:col-span-7 overflow-hidden rounded-2xl bg-sand-200 aspect-[16/10] sm:aspect-[16/9.5] shadow-[0_4px_20px_rgba(0,0,0,0.04)] ${
                     isReversed ? "lg:col-start-6" : ""
                   }`}
                 >
@@ -58,14 +58,14 @@ export default function Ambiance() {
                   <span className="text-[11px] uppercase tracking-[0.25em] font-medium text-champagne-600 mb-2 block">
                     {space.eyebrow}
                   </span>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-espresso-950 mb-4 tracking-tight">
+                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-espresso-950 mb-3 tracking-tight">
                     {space.title}
                   </h3>
-                  <p className="text-espresso-700/90 text-sm leading-relaxed font-light mb-6">
+                  <p className="text-espresso-700/90 text-sm leading-relaxed font-light mb-5">
                     {space.description}
                   </p>
 
-                  <div className="pt-4 border-t border-sand-300/50 flex items-center justify-between text-xs text-sand-700 font-sans">
+                  <div className="pt-3.5 border-t border-sand-300/50 flex items-center justify-between text-xs text-sand-700 font-sans">
                     <span className="uppercase tracking-widest text-[10px] text-sand-500 font-medium">
                       Atmosphere
                     </span>

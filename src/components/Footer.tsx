@@ -83,7 +83,7 @@ export default function Footer() {
               {RESTAURANT_INFO.address.full}
             </p>
             <p className="text-xs text-sand-400 font-light">
-              Open Daily: 12:00 PM – 11:30 PM
+              Open Daily: 12:00 PM – 12:00 AM
             </p>
             <div className="pt-1">
               <a

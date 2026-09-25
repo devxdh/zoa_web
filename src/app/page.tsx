@@ -17,16 +17,17 @@ export default function Home() {
       {/* Hero */}
       <Hero />
 
-      {/* Editorial Quotation Interlude */}
-      <section className="py-20 sm:py-24 bg-[#FAF8F5] text-center border-b border-sand-300/40">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="font-serif italic text-2xl sm:text-3xl text-espresso-900 font-light leading-relaxed">
+      {/* Editorial Quotation Interlude with refined, snug spacing */}
+      <section className="pt-12 pb-6 sm:pt-16 sm:pb-8 bg-[#FAF8F5] text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <p className="font-serif italic text-xl sm:text-2xl text-espresso-900 font-light leading-relaxed">
             &ldquo;An architectural pause in the heart of Jodhpur — where calm desert stone meets
             the precision of artisanal coffee and slow dining.&rdquo;
           </p>
-          <span className="mt-4 block text-[11px] uppercase tracking-[0.25em] text-sand-600 font-medium">
+          <span className="mt-3 block text-[10px] uppercase tracking-[0.28em] text-sand-600 font-medium">
             ZOA Jodhpur • Pal Bypass
           </span>
+          <div className="mt-6 w-12 h-[1px] bg-sand-300/60 mx-auto" />
         </div>
       </section>
 

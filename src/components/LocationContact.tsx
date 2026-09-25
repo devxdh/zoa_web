@@ -7,13 +7,13 @@ import { ArrowUpRight, Phone } from "lucide-react";
 
 export default function LocationContact() {
   return (
-    <section id="location" className="py-24 sm:py-32 bg-[#FAF8F5] text-espresso-900 scroll-mt-12">
+    <section id="location" className="py-16 sm:py-20 bg-[#FAF8F5] text-espresso-900 scroll-mt-12">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 items-start">
           {/* Details Column */}
-          <div className="lg:col-span-5 space-y-10">
+          <div className="lg:col-span-5 space-y-8">
             <div>
-              <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-600 block mb-3">
+              <span className="text-xs uppercase tracking-[0.28em] font-sans font-medium text-champagne-600 block mb-2.5">
                 Visit & Contact
               </span>
 
@@ -21,14 +21,14 @@ export default function LocationContact() {
                 Location & Hours
               </h2>
 
-              <p className="mt-4 text-espresso-700/85 text-sm sm:text-base leading-relaxed font-light">
+              <p className="mt-3 text-espresso-700/85 text-sm sm:text-base leading-relaxed font-light">
                 Positioned along Jodhpur&apos;s Pal Bypass, ZOA is an easy drive from all city
                 quarters, offering dedicated on-premise parking.
               </p>
             </div>
 
             {/* Address */}
-            <div className="space-y-1.5 border-t border-sand-300/60 pt-6">
+            <div className="space-y-1.5 border-t border-sand-300/60 pt-5">
               <span className="text-[11px] uppercase tracking-widest text-sand-500 font-medium block">
                 Address
               </span>
@@ -42,7 +42,7 @@ export default function LocationContact() {
             </div>
 
             {/* Hours */}
-            <div className="space-y-1.5 border-t border-sand-300/60 pt-6">
+            <div className="space-y-1.5 border-t border-sand-300/60 pt-5">
               <span className="text-[11px] uppercase tracking-widest text-sand-500 font-medium block">
                 Hours of Hospitality
               </span>
@@ -55,7 +55,7 @@ export default function LocationContact() {
             </div>
 
             {/* Links */}
-            <div className="border-t border-sand-300/60 pt-6 flex flex-col space-y-3">
+            <div className="border-t border-sand-300/60 pt-5 flex flex-col space-y-3">
               <a
                 href={RESTAURANT_INFO.googleMapsUrl}
                 target="_blank"
@@ -88,7 +88,7 @@ export default function LocationContact() {
           </div>
 
           {/* Map Column */}
-          <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-sand-200 border border-sand-300/70 shadow-sm h-[380px] sm:h-[440px]">
+          <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-sand-200 border border-sand-300/70 shadow-sm h-[360px] sm:h-[420px]">
             <iframe
               src={RESTAURANT_INFO.googleMapsEmbedUrl}
               width="100%"

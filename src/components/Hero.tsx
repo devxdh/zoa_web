@@ -60,7 +60,7 @@ export default function Hero() {
 
         {/* Subtle Timings & Directions Note */}
         <div className="mt-12 text-sand-400 text-xs tracking-wider flex items-center space-x-3">
-          <span>Open Daily 12:00 PM – 11:30 PM</span>
+          <span>Open Daily 12:00 PM – 12:00 AM</span>
           <span className="text-sand-600">•</span>
           <a
             href={RESTAURANT_INFO.googleMapsUrl}
